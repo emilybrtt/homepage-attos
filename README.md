@@ -16,8 +16,8 @@ Construir uma plataforma informativa, responsiva e intuitiva, permitindo que pac
 - **HTML5**  
 - **CSS3**  
 - **React.js**  
-- [opcional] **EmailJS** (ou outro serviço para envio de mensagens)  
-- [opcional] **Vite / Create React App**  
+- **EmailJS**
+- **Vite / Create React App**  
 
 ## 🚀 Funcionalidades
 
