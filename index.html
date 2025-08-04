@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Attos de Psicologia - Araras, SP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <div class="logo-icon"><img src="assets/logo.jpg" alt="Logotipo"></div>
+                <div>
+                    <h1>Instituto Attos</h1>
+                    <p>Psicologia</p>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="inicio" class="hero">
+            <h2>Cuidando da sua <span class="highlight">saúde mental</span> com excelência</h2>
+            <p>No Instituto Attos oferecemos atendimento psicológico humanizado e especializado em Araras, SP</p>
+            <a href="#contato" class="cta-button">Agendar Consulta</a>
+        </section>
+
+        <section id="servicos" class="services">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">👤</div>
+                    <h3>Terapia Individual</h3>
+                    <p>Atendimento personalizado para adultos, adolescentes e crianças, focado em suas necessidades específicas e objetivos terapêuticos.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💬</div>
+                    <h3>Eventos e palestras</h3>
+                    <p>Encontros e conversas conduzidos por especialistas, voltados ao crescimento pessoal e ao fortalecimento de vínculos afetivos.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧠</div>
+                    <h3>Aulas e workshops</h3>
+                    <p>Atividades práticas e teóricas voltadas ao desenvolvimento emocional, autoconhecimento e promoção da saúde mental.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipe" class="team">
+            <h2 class="section-title">Nossa Equipe</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">CM</div>
+                    <h4>Camila Menezes</h4>
+                    <p>Psicóloga</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">MF</div>
+                    <h4>Mônica Ferreira da Silva</h4>
+                    <p>Psicóloga</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">DR</div>
+                    <h4>Daiene Marcela Rigoto</h4>
+                    <p>Psicóloga</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Endereço</strong><br>
+                            Rua Cândida Lacerda, 310 - Centro<br>
+                            Araras, SP
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <strong>Horário de Funcionamento</strong><br>
+                            Segunda a Sexta: 8h às 18h
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Contate-nos</h3>
+                    <form id="contactForm" action="https://formsubmit.co/themilygomes@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone *</label>
+                                <input type="tel" id="telefone" name="telefone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="servico">Tipo de Serviço</label>
+                            <select id="servico" name="servico">
+                                <option value="">Selecione um serviço</option>
+                                <option value="terapia-individual">Terapia Individual</option>
+                                <option value="terapia-casal">Terapia de Casal</option>
+                                <option value="avaliacao-psicologica">Avaliação Psicológica</option>
+                                <option value="orientacao">Orientação Psicológica</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem (opcional)</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte-nos um pouco sobre o que você busca ou qualquer informação adicional..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Enviar Solicitação</span>
+                            <span class="button-loading" style="display: none;">Enviando...</span>
+                        </button>
+                        
+                        <p class="form-note">
+                            * Campos obrigatórios. Entraremos em contato em até 24 horas para confirmar o agendamento.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Instituto Attos de Psicologia. Todos os direitos reservados.</p>
+            <p>Cuidando da sua saúde mental com profissionalismo e dedicação em Araras, SP</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling para links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Efeito de scroll no header
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 25px rgba(0, 0, 0, 0.15)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Animação de entrada dos elementos
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Form handling
+        const contactForm = document.getElementById('contactForm');
+        const submitButton = contactForm.querySelector('.submit-button');
+        const buttonText = submitButton.querySelector('.button-text');
+        const buttonLoading = submitButton.querySelector('.button-loading');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show loading state
+            buttonText.style.display = 'none';
+            buttonLoading.style.display = 'inline';
+            submitButton.disabled = true;
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData);
+            
+        fetch('https://formsubmit.co/ajax/themilygomes@gmail.com', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Solicitação enviada com sucesso! Entraremos em contato em breve.');
+                contactForm.reset();
+            } else {
+                alert('Ocorreu um erro ao enviar a solicitação. Tente novamente mais tarde.');
+            }
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            alert('Erro de conexão. Verifique sua internet e tente novamente.');
+        })
+        .finally(() => {
+            buttonText.style.display = 'inline';
+            buttonLoading.style.display = 'none';
+            submitButton.disabled = false;
+        });
+        });
+
+
+        // Phone number formatting
+        const telefoneInput = document.getElementById('telefone');
+        telefoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            
+            if (value.length <= 11) {
+                if (value.length <= 2) {
+                    value = value.replace(/(\d{0,2})/, '($1');
+                } else if (value.length <= 7) {
+                    value = value.replace(/(\d{2})(\d{0,5})/, '($1) $2');
+                } else {
+                    value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+                }
+            }
+            
+            e.target.value = value;
+        });
+    </script>
+</body>
+</html>
